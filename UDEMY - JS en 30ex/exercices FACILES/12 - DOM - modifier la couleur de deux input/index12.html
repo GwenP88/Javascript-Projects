@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 12</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    
+        <label>Nom : </label>
+        <input title="A" type="text" id="nom">
+        <label>Prenom : </label>
+        <input title="B" type="text" id="prenom">
+        <label>Age : </label>
+        <input title="C" type="text" id="age">
+        <label>Sexe : </label>
+        <input title="D" type="text" id="sexe">
+
+        <script>
+
+            // Solution 1 sans jquery
+            const inputAge = document.getElementById("age").style.backgroundColor = "pink";
+            // ou document.querySelector("#nom")
+            const inputsexe = document.getElementById("sexe").style.backgroundColor = "blue";
+            // ou document.querySelector("#prenom")
+
+            // Solution 2 : avec du Jquery
+            // site Jquery = enregistrer sous -
+            // insérer le fichier jquery comme source du script dans le head
+            
+            // récupérer les éléments du DOM
+            const inputNom = $("#nom");
+            const inputPrenom = $("#prenom");
+
+            inputNom.css("background-color","red");
+            inputPrenom.css("background-color","orange");
+        </script>
+
+</body>
+</html>

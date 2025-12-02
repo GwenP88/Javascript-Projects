@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 13</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    
+    <button onclick="incrementer()">incrémenter !</button>
+    <!--l'attribut onclick permet de determiner ce qu'il va se passer au clic sur le bouton. ici on lie une fonction au clic "au clic, on applique la fonction incrementer"-->
+    <div>Cliquer sur le bouton pour incrémenter !</div>
+
+<script>
+
+    var nbDeClics = 0;
+    function incrementer(){
+        nbDeClics++;
+        document.querySelector("div").innerHTML = ("vous avez cliqué " + nbDeClics + " fois!")
+    }
+
+    //peut également etre fait dans un fichier main.js en n'oubliant pas de lier le fichier html au fichier js (src="main13.js") dans le head
+
+</script>
+
+</body>
+</html>
